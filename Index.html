@@ -8,19 +8,26 @@
     <link rel="stylesheet" href="src/index.css" />
     <header>
       <div class = "weather-app">
-      <form>
-        <input type="search" placeholder="Enter a city" required />
-        <input type="submit" value="search" />
+      <form >
+        <input class="search-form-input" type="search" placeholder="Enter a city" required />
+        <input class="search-form-button" type="submit" value="search" />
       </form>
 
       <main>
+        
         <div>
-          <h1>London</h1>
+          <h1 class="weather-app-city">London</h1>
         </div>
 
-        <span>☀️ 21°C </span> Humidity:12%, wind:3.13km/h
+        <span class="weather-app-data" >
+           <div class="weather-app-icon">☀️</div>
+            <div class="weather-app-temperature">21°C</div>
+           </span>
+            <div class="weather-app-conditions"> 
+              <em>Humidity:12%, wind:3.13km/h
         <div>
-          <p>Friday 15:34, <br />sunny intervals</p>
+          <p>Friday 15:34, sunny intervals</p> </em>    </div>
+        
         </div>
       </main>
     </header>
@@ -37,8 +44,11 @@
 
       and hosted on
       <a href="https://ephemeral-paprenjak-30dcdb.netlify.app/">Netlify</a>
+    
     </footer>
-     </div>
-  </body>
+
+    </div>
+
+    </body>
    
 </html>
